@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="module" src="js/acquisitions.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/acquisitions.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <div class="container">
+      <h1>Temperature and Humidity Dashboard</h1>
+      <div class="button-header">
+        <button id="stopBtn" style="background-color: salmon">Stop</button>
+        <button id="saveBtn" style="background-color: salmon; margin: auto">
+          Save
+        </button>
+        Save Data as Json
+      </div>
+    </div>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Room Area 1</h2>
+      <div class="chart-container">
+        <div class="roomArea1">
+          <h3 style="background-color: lightgray">Temperature</h3>
+          <canvas id="chartTemperature1" width="600" height="400"></canvas>
+          <div class="box-container">
+            <div class="box-item">
+              <p>average</p>
+              <div class="square" style="background-color: rgb(94, 157, 228)">
+                <h3 id="averageTemp1">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>max</p>
+              <div class="square" style="background-color: rgb(255, 219, 118)">
+                <h3 id="minTemp1">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>min</p>
+              <div class="square" style="background-color: rgb(222, 91, 255)">
+                <h3 id="maxTemp1">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>median</p>
+              <div class="square" style="background-color: rgb(76, 253, 224)">
+                <h3 id="medianTemp1">0</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="roomArea1">
+          <h3 style="background-color: lightgray">Humidity</h3>
+          <canvas id="chartHumidity1" width="600" height="400"></canvas>
+          <div class="box-container">
+            <div class="box-item">
+              <p>average</p>
+              <div class="square" style="background-color: rgb(94, 157, 228)">
+                <h3 id="averageHumid1">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>max</p>
+              <div class="square" style="background-color: rgb(255, 219, 118)">
+                <h3 id="minHumid1">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>min</p>
+              <div class="square" style="background-color: rgb(222, 91, 255)">
+                <h3 id="maxHumid1">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>median</p>
+              <div class="square" style="background-color: rgb(76, 253, 224)">
+                <h3 id="medianHumid1">0</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Room Area 2</h2>
+      <div class="chart-container">
+        <div class="roomArea1">
+          <h3 style="background-color: lightgray">Temperature</h3>
+          <canvas id="chartTemperature2" width="600" height="400"></canvas>
+          <div class="box-container">
+            <div class="box-item">
+              <p>average</p>
+              <div class="square" style="background-color: rgb(94, 157, 228)">
+                <h3 id="averageTemp2">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>max</p>
+              <div class="square" style="background-color: rgb(255, 219, 118)">
+                <h3 id="minTemp2">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>min</p>
+              <div class="square" style="background-color: rgb(222, 91, 255)">
+                <h3 id="maxTemp2">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>median</p>
+              <div class="square" style="background-color: rgb(76, 253, 224)">
+                <h3 id="medianTemp2">0</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="roomArea1">
+          <h3 style="background-color: lightgray">Humidity</h3>
+          <canvas id="chartHumidity2" width="600" height="400"></canvas>
+          <div class="box-container">
+            <div class="box-item">
+              <p>average</p>
+              <div class="square" style="background-color: rgb(94, 157, 228)">
+                <h3 id="averageHumid2">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>max</p>
+              <div class="square" style="background-color: rgb(255, 219, 118)">
+                <h3 id="minHumid2">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>min</p>
+              <div class="square" style="background-color: rgb(222, 91, 255)">
+                <h3 id="maxHumid2">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>median</p>
+              <div class="square" style="background-color: rgb(76, 253, 224)">
+                <h3 id="medianHumid2">0</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Room Area 3</h2>
+      <div class="chart-container">
+        <div class="roomArea1">
+          <h3 style="background-color: lightgray">Temperature</h3>
+          <canvas id="chartTemperature3" width="600" height="400"></canvas>
+          <div class="box-container">
+            <div class="box-item">
+              <p>average</p>
+              <div class="square" style="background-color: rgb(94, 157, 228)">
+                <h3 id="averageTemp3">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>max</p>
+              <div class="square" style="background-color: rgb(255, 219, 118)">
+                <h3 id="minTemp3">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>min</p>
+              <div class="square" style="background-color: rgb(222, 91, 255)">
+                <h3 id="maxTemp3">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>median</p>
+              <div class="square" style="background-color: rgb(76, 253, 224)">
+                <h3 id="medianTemp3">0</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="roomArea1">
+          <h3 style="background-color: lightgray">Humidity</h3>
+          <canvas id="chartHumidity3" width="600" height="400"></canvas>
+          <div class="box-container">
+            <div class="box-item">
+              <p>average</p>
+              <div class="square" style="background-color: rgb(94, 157, 228)">
+                <h3 id="averageHumid3">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>max</p>
+              <div class="square" style="background-color: rgb(255, 219, 118)">
+                <h3 id="minHumid3">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>min</p>
+              <div class="square" style="background-color: rgb(222, 91, 255)">
+                <h3 id="maxHumid3">0</h3>
+              </div>
+            </div>
+            <div class="box-item">
+              <p>median</p>
+              <div class="square" style="background-color: rgb(76, 253, 224)">
+                <h3 id="medianHumid3">0</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/chart.js"></script>
+
+  <script type="module" src="service/sensorData.js"></script>
+
+  <script type="module" src="service/sensorService.js"></script>
+</html>
